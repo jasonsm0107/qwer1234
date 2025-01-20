@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.sloth.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "untitled2.refmap.json",
+  "mixins": [
+    "CommandSuggestionHelperAccessor",
+    "ItemDropScreenAccessor",
+    "MinecraftAccessor",
+    "MixinChatScreen",
+    "MixinChatScreen",
+    "MixinChooseAttackScreen"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

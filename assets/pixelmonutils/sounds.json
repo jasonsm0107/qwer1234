@@ -1,0 +1,23 @@
+{
+  "legendary_found": {
+    "category": "ambient",
+    "subtitle": "pixelmonutils.found.legendary",
+    "sounds": [
+      "pixelmonutils:found/legendary"
+    ]
+  },
+  "new_pokemon_found": {
+    "category": "ambient",
+    "subtitle": "pixelmonutils.found.new.pokemon",
+    "sounds": [
+      "pixelmonutils:found/new"
+    ]
+  },
+  "shiny_found": {
+    "category": "ambient",
+    "subtitle": "pixelmonutils.found.shiny",
+    "sounds": [
+      "pixelmonutils:found/shiny"
+    ]
+  }
+}
