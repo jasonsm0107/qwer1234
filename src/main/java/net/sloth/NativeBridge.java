@@ -48,4 +48,38 @@ public class NativeBridge {
     public static native void initializeTasks();
     public static native void updateTasks();
     public static native void cleanupTasks();
+
+    public static final int LOG_LEVEL_DEBUG = 0;
+    public static final int LOG_LEVEL_INFO = 1;
+    public static final int LOG_LEVEL_WARN = 2;
+    public static final int LOG_LEVEL_ERROR = 3;
+    public static final int LOG_LEVEL_FATAL = 4;
+
+    // 네이티브 메서드 선언
+    public static native void initializeLogger(String logPath, int logLevel);
+    public static native void log(int level, String message);
+
+    // 편의를 위한 래퍼 메서드들
+    public static void debug(String message) {
+        log(LOG_LEVEL_DEBUG, message);
+    }
+
+    public static void info(String message) {
+        log(LOG_LEVEL_INFO, message);
+    }
+
+    public static void warn(String message) {
+        log(LOG_LEVEL_WARN, message);
+    }
+
+    public static void error(String message) {
+        log(LOG_LEVEL_ERROR, message);
+    }
+
+    public static void fatal(String message) {
+        log(LOG_LEVEL_FATAL, message);
+    }
+
+    public static native void handleKeyPress(int keyCode);
+    public static native void handleKeyRelease(int keyCode);
 }

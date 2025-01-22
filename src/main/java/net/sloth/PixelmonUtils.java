@@ -1,5 +1,6 @@
 package net.sloth;
 
+import net.sloth.util.ModLogger;
 import net.sloth.util.ResourceManager;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -14,6 +15,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.commons.lang3.tuple.Pair;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.nio.file.Path;
 
 @Mod("ingka1111")
 public class PixelmonUtils {
@@ -57,6 +60,9 @@ public class PixelmonUtils {
 
             // 2. 리소스 초기화
             ResourceManager.init();
+
+            Path logPath = ResourceManager.getModDirectory().resolve("native.log");
+            ModLogger.enableNativeLogging(logPath.toString());
 
             // 3. 태스크 초기화
             PUTaskHandler.init();
