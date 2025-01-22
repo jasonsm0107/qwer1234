@@ -5,12 +5,7 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "untitled2.refmap.json",
   "mixins": [
-    "CommandSuggestionHelperAccessor",
-    "ItemDropScreenAccessor",
-    "MinecraftAccessor",
-    "MixinChatScreen",
-    "MixinChatScreen",
-    "MixinChooseAttackScreen"
+
   ],
   "client": [
   ],

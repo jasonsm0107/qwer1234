@@ -8,8 +8,6 @@
     "CommandSuggestionHelperAccessor",
     "ItemDropScreenAccessor",
     "MinecraftAccessor",
-    "MixinChatScreen",
-    "MixinChatScreen",
     "MixinChooseAttackScreen"
   ],
   "client": [
